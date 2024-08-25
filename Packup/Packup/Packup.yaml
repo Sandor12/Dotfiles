@@ -1,0 +1,6 @@
+Backup:
+  nvim: ~/.config/nvim/
+  zsh: ~/.zshrc
+  i3: ~/.config/i3
+  Packup: ~/.config/Packup
+  
