@@ -6,6 +6,10 @@ keymap.set("n", "<C-j>", "<C-w>j", opts) -- Navigate down
 keymap.set("n", "<C-k>", "<C-w>k", opts) -- Navigate up
 keymap.set("n", "<C-l>", "<C-w>l", opts) -- Navigate right
 
+-- classic navigation
+keymap.set("n", "<C-j>", "<C-d>", opts) -- Navigate down
+keymap.set("n", "<C-k>", "<C-u>", opts) -- Navigate down
+
 -- Directory Navigation  Not used anymore
 -- keymap.set("n", "<leader>m", ":NvimTreeFocus<CR>", { noremap = true, silent = true })
 -- keymap.set("n", "<leader>f", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
