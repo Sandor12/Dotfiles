@@ -1,10 +1,10 @@
 local keymap = vim.keymap
 
 -- Pane Navigation
-keymap.set("n", "<C-h>", "<C-w>h", opts) -- Navigate left
-keymap.set("n", "<C-j>", "<C-w>j", opts) -- Navigate down
-keymap.set("n", "<C-k>", "<C-w>k", opts) -- Navigate up
-keymap.set("n", "<C-l>", "<C-w>l", opts) -- Navigate right
+keymap.set("n", "<leader>h", "<C-w>h", opts) -- Navigate left
+keymap.set("n", "<leader>j", "<C-w>j", opts) -- Navigate down
+keymap.set("n", "<leader>k", "<C-w>k", opts) -- Navigate up
+keymap.set("n", "<leader>l", "<C-w>l", opts) -- Navigate right
 
 -- classic navigation
 keymap.set("n", "<C-j>", "<C-d>", opts) -- Navigate down

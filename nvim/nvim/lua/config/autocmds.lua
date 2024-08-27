@@ -25,8 +25,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 -- cd to root on enter
 vim.api.nvim_create_autocmd("BufEnter", {
 	callback = function(ctx)
-		local root =
-			vim.fs.root(ctx.buf, { ".git", "Makefile", "CMakeLists.txt", "venv", ".venv", "index.norg", ".ignore" })
+		local root = vim.fs.root(ctx.buf, { ".git", "Makefile", "CMakeLists.txt", "venv", ".venv", "index.norg" })
 		if root then
 			vim.cmd("cd " .. root)
 		end
