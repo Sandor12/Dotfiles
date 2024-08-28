@@ -10,7 +10,7 @@ keymap.set("n", "<leader>l", "<C-w>l", opts) -- Navigate right
 keymap.set("n", "<C-j>", "<C-d>", opts) -- Navigate down
 keymap.set("n", "<C-k>", "<C-u>", opts) -- Navigate down
 
--- Directory Navigation  Not used anymore
+-- Directory Navigation nvimtree  Not used anymore
 -- keymap.set("n", "<leader>m", ":NvimTreeFocus<CR>", { noremap = true, silent = true })
 -- keymap.set("n", "<leader>f", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 
@@ -40,3 +40,6 @@ keymap.set("i", "<C-l>", function()
 		ls.expand_or_jump()
 	end
 end)
+
+-- Neogit
+keymap.set("n", "<leader>g", ":Neogit<CR>")

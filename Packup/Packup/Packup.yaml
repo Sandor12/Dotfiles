@@ -1,6 +1,12 @@
 Backup:
   nvim: ~/.config/nvim/
-  zsh: ~/.zshrc
   i3: ~/.config/i3
   Packup: ~/.config/Packup
+  dwm: ~/dwm
+  dwmstatusbar: ~/.stat.sh
+  dwmautostart: ~/.dwm-xinitrc
+  backgroundimage: ~/.background.jpg
+  packagelist: ~/packagelist
+  fish: ~/.config/fish
+  
   
