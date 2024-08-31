@@ -10,9 +10,9 @@ tree-sitter
 rust
 ripgrep
 fd
-iwd
 tectonic
 python-pywal
 feh
 pipewire
 pipewire-pulse
+networkmanager

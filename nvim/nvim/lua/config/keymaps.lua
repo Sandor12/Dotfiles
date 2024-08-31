@@ -8,7 +8,7 @@ keymap.set("n", "<leader>l", "<C-w>l", opts) -- Navigate right
 
 -- classic navigation
 keymap.set("n", "<C-j>", "<C-d>", opts) -- Navigate down
-keymap.set("n", "<C-k>", "<C-u>", opts) -- Navigate down
+keymap.set("n", "<C-k>", "<C-u>", opts) -- Navigate up
 
 -- Directory Navigation nvimtree  Not used anymore
 -- keymap.set("n", "<leader>m", ":NvimTreeFocus<CR>", { noremap = true, silent = true })

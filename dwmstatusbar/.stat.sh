@@ -97,5 +97,5 @@ while :; do
 	xsetroot -name "$(status | tr '\n' ' ')"
 
 	# Sleep for 1 minute before updating the status bar
-	sleep 30
+	sleep 30s
 done
