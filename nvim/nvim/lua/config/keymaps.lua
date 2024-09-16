@@ -43,3 +43,6 @@ end)
 
 -- Neogit
 keymap.set("n", "<leader>g", ":Neogit<CR>")
+
+-- Oil
+keymap.set("n", "<leader>fd", "<CMD>Oil<CR>", { desc = "Open parent directory" })

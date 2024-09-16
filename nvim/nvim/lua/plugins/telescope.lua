@@ -26,14 +26,14 @@ local config = function()
 				previewer = false,
 			},
 		},
-		extensions = {
-			file_browser = {
-				theme = "ivy",
-				previewer = false,
-				hidden = true,
-				layout_config = { height = 0.2 },
-			},
-		},
+		-- extensions = {
+		-- 	file_browser = {
+		-- 		theme = "ivy",
+		-- 		previewer = false,
+		-- 		hidden = true,
+		-- 		layout_config = { height = 0.2 },
+		-- 	},
+		-- },
 	})
 end
 
@@ -43,13 +43,13 @@ return {
 	lazy = false,
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-		"nvim-telescope/telescope-file-browser.nvim",
+		-- "nvim-telescope/telescope-file-browser.nvim",
 	},
 	config = config,
 	keys = {
 		keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>"),
 		keymap.set("n", "<leader>ff", ":Telescope find_files<CR>"),
-		keymap.set("n", "<leader>fd", ":Telescope file_browser<CR>"),
+		-- keymap.set("n", "<leader>fd", ":Telescope file_browser<CR>"),  -- oil is probably better
 		keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>"),
 		keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>"),
 		keymap.set("n", "<leader>fb", ":Telescope buffers<CR>"),

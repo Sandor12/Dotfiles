@@ -23,11 +23,12 @@ local config = function()
 			"gitignore",
 			"python",
 			"toml",
+			"norg",
 		},
 		auto_install = true,
 		highlight = {
-			enable = true,
-			additional_vim_regex_highlighting = true,
+			-- enable = true,
+			-- additional_vim_regex_highlighting = true,
 		},
 		incremental_selection = {
 			enable = true,

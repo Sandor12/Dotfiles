@@ -16,3 +16,4 @@ feh
 pipewire
 pipewire-pulse
 networkmanager
+dmenu

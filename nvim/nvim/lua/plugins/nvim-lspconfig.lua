@@ -113,7 +113,6 @@ local config = function()
 			languages = {
 				lua = { luacheck, stylua },
 				python = { ruff, autopep8 },
-				--python = { ruff },
 				c = { clangformat, clang_tidy }, -- maybe cpplint will function better
 				cpp = { clangformat, clang_tidy },
 				sh = { shfmt, shellcheck },

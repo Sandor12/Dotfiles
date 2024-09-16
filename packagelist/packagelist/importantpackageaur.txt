@@ -1,2 +1,2 @@
 st
-rtl88xxau-aircrack-dkms-git
+rtl8814au-aircrack-dkms-git
