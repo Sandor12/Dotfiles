@@ -46,3 +46,16 @@ keymap.set("n", "<leader>g", ":Neogit<CR>")
 
 -- Oil
 keymap.set("n", "<leader>fd", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+keymap.set("n", "<leader>fp", "<CMD>Oil ~/Projects<CR>", { desc = "Open Projects directory" })
+keymap.set("n", "<leader>fc", "<CMD>Oil ~/.config/nvim/<CR>", { desc = "Open Projects directory" })
+
+-- Move to neorg index
+keymap.set("n", "<leader>ni", "<CMD>Neorg workspace notes<CR>")
+keymap.set("n", "<leader>nr", "<CMD>Neorg return<CR>")
+
+-- Compile latex
+keymap.set("n", "<leader>c", "<CMD>!tectonic -X compile " .. vim.fn.expand("%") .. "<CR>")
+
+-- Generate doc
+keymap.set("n", "<leader>nd", "<CMD>Neogen func<CR>", { desc = "Create docs" })
+

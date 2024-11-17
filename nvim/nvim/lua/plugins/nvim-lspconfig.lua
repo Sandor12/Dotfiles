@@ -14,7 +14,7 @@ local config = function()
 		vim.keymap.set("n", "gf", "<cmd>Lspsaga finder<CR>", opts)
 		vim.keymap.set("n", "gD", "<cmd>Lua vim.lsp.buf.implementation<CR>", opts)
 		vim.keymap.set("n", "gr", "<cmd>Telescope lsp_references<CR>", opts)
-		vim.keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts)
+		vim.keymap.set("n", "gd", "<cmd>Lspsaga goto_definition<CR>", opts)
 		vim.keymap.set("n", "gi", "<cmd>Lua vim.lsp.buf.implementation<CR>", opts)
 		vim.keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts)
 		vim.keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts)
@@ -112,7 +112,7 @@ local config = function()
 		settings = {
 			languages = {
 				lua = { luacheck, stylua },
-				python = { ruff, autopep8 },
+				python = { ruff }, --autopep8
 				c = { clangformat, clang_tidy }, -- maybe cpplint will function better
 				cpp = { clangformat, clang_tidy },
 				sh = { shfmt, shellcheck },

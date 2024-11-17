@@ -8,5 +8,6 @@ Backup:
   backgroundimage: ~/.background.jpg
   packagelist: ~/packagelist
   fish: ~/.config/fish
+  tmux: ~/.tmux.conf
   
   

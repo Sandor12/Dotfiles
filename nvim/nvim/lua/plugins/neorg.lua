@@ -3,14 +3,16 @@ local config = function()
 		load = {
 			["core.defaults"] = {},
 			["core.concealer"] = {
-				folds = false,
-				icons = {
-					code_block = {
-						conceal = true,
-						content_only = true,
-					},
-					padding = {
-						left = 2,
+				config = {
+					folds = false,
+					icons = {
+						code_block = {
+							conceal = true,
+							content_only = false,
+						},
+						-- padding = {
+						-- 	left = 2,
+						-- },
 					},
 				},
 			},
@@ -22,6 +24,8 @@ local config = function()
 					default_workspace = "notes",
 				},
 			},
+			["core.integrations.nvim-cmp"] = {},
+			["core.export"] = { config = { extensions = "all" } },
 		},
 	})
 end
@@ -29,6 +33,6 @@ end
 return {
 	"nvim-neorg/neorg",
 	lazy = false, -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
-	version = "*", -- Pin Neorg to the latest stable release
+	version = "7.0", -- Pin Neorg to the latest stable release
 	config = config,
 }
