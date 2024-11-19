@@ -39,6 +39,7 @@ local opts = {
 	change_detection = {
 		notify = true,
 	},
+	rocks = { hererocks = true },
 }
 
 require("lazy").setup("plugins", opts)

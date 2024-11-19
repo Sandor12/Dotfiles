@@ -53,13 +53,13 @@ static const Layout layouts[] = {
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       \
     {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \
-        .v = (const char *[]) { "/usr/bin/st", "-c", cmd, NULL }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         \
+        .v = (const char *[]) { "/usr/local/bin/st", "-c", cmd, NULL }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \
     }
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = {"dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL};
-static const char *termcmd[] = {"st", NULL};
+static const char *termcmd[] = {"st", "tmux", NULL};
 static const char *freetube[] = {"freetube", NULL};
 static const char *firefox[] = {"firefox", NULL};
 static const char *discord[] = {"discord", NULL};
@@ -124,4 +124,3 @@ static const Button buttons[] = {
 };
 
 static const char *const autostart[] = {"wal", "-i", "/home/sandor/.background.jpg", NULL, "sh", "-c", "exec $HOME/.stat.sh", NULL, NULL};
-
