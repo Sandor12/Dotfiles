@@ -12,5 +12,6 @@ Backup:
   tmux: ~/.tmux.conf
   htop: ~/.config/htop
   Scripts: ~/Scripts
+  clang-format: ~/.clang-format
   
   
