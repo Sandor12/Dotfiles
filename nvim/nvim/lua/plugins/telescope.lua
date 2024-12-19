@@ -25,6 +25,9 @@ local config = function()
 				theme = "ivy",
 				previewer = false,
 			},
+			man_pages = {
+				theme = "ivy",
+			},
 		},
 		-- extensions = {
 		-- 	file_browser = {
@@ -50,7 +53,8 @@ return {
 		keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>"),
 		keymap.set("n", "<leader>ff", ":Telescope find_files<CR>"),
 		-- keymap.set("n", "<leader>fd", ":Telescope file_browser<CR>"),  -- oil is probably better
-		keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>"),
+		keymap.set("n", "<leader>fh", ":Telescope man_pages<CR>"),
+		-- keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>"),
 		keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>"),
 		keymap.set("n", "<leader>fb", ":Telescope buffers<CR>"),
 	},

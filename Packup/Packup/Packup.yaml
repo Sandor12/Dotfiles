@@ -11,5 +11,6 @@ Backup:
   fish: ~/.config/fish
   tmux: ~/.tmux.conf
   htop: ~/.config/htop
+  Scripts: ~/Scripts
   
   

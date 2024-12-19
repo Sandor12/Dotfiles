@@ -58,4 +58,3 @@ keymap.set("n", "<leader>c", "<CMD>!tectonic -X compile " .. vim.fn.expand("%") 
 
 -- Generate doc
 keymap.set("n", "<leader>nd", "<CMD>Neogen func<CR>", { desc = "Create docs" })
-

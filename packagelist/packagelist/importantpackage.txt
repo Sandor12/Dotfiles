@@ -17,3 +17,7 @@ pipewire
 pipewire-pulse
 networkmanager
 dmenu
+zathura
+zenity
+ninja
+sbctl
