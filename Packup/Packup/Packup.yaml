@@ -1,0 +1,17 @@
+Backup:
+  nvim: ~/.config/nvim/
+  i3: ~/.config/i3
+  Packup: ~/.config/Packup
+  dwm: ~/dwm
+  st: ~/st
+  dwmstatusbar: ~/.stat.sh
+  dwmautostart: ~/.dwm-xinitrc
+  backgroundimage: ~/.background.jpg
+  packagelist: ~/packagelist
+  fish: ~/.config/fish
+  tmux: ~/.tmux.conf
+  htop: ~/.config/htop
+  Scripts: ~/Scripts
+  clang-format: ~/.clang-format
+  
+  
