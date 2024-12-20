@@ -7,6 +7,7 @@ npm
 luarocks
 clang
 tree-sitter
+tree-sitter-cli
 rust
 ripgrep
 fd
@@ -20,4 +21,4 @@ dmenu
 zathura
 zenity
 ninja
-sbctl
+xclip
