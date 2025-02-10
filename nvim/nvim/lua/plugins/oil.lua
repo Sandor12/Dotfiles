@@ -8,6 +8,7 @@ return {
 		columns = {
 			"icon",
 			"permissions",
+
 			"size",
 		},
 		view_options = {

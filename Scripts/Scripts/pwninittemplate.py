@@ -7,13 +7,15 @@ from pwn import *
 context.binary = {bin_name}
 context.log_level = "DEBUG"
 
-
+use_ssh = True
 sshuser = "user"
 sshhost = "host"
 sshport = 22
 sshpassword = ""
 sshprogramname = ""
 
+remoteaddress = "addr"
+remoteip = 1337
 
 def conn():
     if args.LOCAL:
@@ -21,16 +23,20 @@ def conn():
             io = gdb.debug({proc_args})
         else:
             io = process({proc_args})
-    elif args.SSH:
-        myssh = ssh(user, host, port, password)
+    elif use_ssh and args.SSH:
+        myssh = ssh(sshuser, sshhost, sshport, sshpassword)
         if args.GDB:
             io = gdb.debug("./" + sshprogramname, ssh=myssh)
         else:
             io = myssh.run("./" + sshprogramname)
     else:
-        io = remote("addr", 1337)
+        io = remote(remoteaddress,remoteip)
 
     return io
+
+sl = lambda a: sendline(a)
+rcvl = lambda a: recvline(a)
+rcvu = lambda a: recvuntil(a.encode())
 
 
 def main():
