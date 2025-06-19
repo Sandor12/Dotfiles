@@ -14,6 +14,6 @@ Backup:
   Scripts: ~/Scripts
   clang-format: ~/.clang-format
   Alacritty: ~/.config/alacritty
-  Hyprland: ~/.config/hyprland
+  Hyprland: ~/.config/hypr
   
   
