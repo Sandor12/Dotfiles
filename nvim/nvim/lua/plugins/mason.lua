@@ -38,6 +38,8 @@ return {
 				"shfmt",
 				"stylua",
 				-- "rust-analyzer", to reset if needed
+				"html-lsp",
+				"css-lsp",
 			},
 			auto_update = true,
 		})

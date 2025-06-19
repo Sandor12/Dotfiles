@@ -77,18 +77,23 @@ local config = function()
 		on_attach = on_attach,
 	})
 
+	lspconfig.gopls.setup({})
+
+	lspconfig.html.setup({})
+
+	lspconfig.cssls.setup({})
+
+	lspconfig.biome.setup({})
+
 	local luacheck = require("efmls-configs.linters.luacheck")
 	local stylua = require("efmls-configs.formatters.stylua")
 	local ruff = require("efmls-configs.linters.ruff")
-	--local pylint = require("efmls-configs.linters.pylint")
-	local autopep8 = require("efmls-configs.formatters.autopep8")
-	--local cpplint = require("efmls-configs.linters.cpplint")
+	--local autopep8 = require("efmls-configs.formatters.autopep8")
 	local clang_tidy = require("efmls-configs.linters.clang_tidy")
 	local clangformat = require("efmls-configs.formatters.clang_format")
 	local shfmt = require("efmls-configs.formatters.shfmt")
 	local shellcheck = require("efmls-configs.linters.shellcheck")
 	local vale = require("efmls-configs.linters.vale")
-	-- local latexindent = require("efmls-configs.formatters.latexindent")
 	lspconfig.efm.setup({
 		filetypes = {
 			"lua",
@@ -96,10 +101,14 @@ local config = function()
 			"c",
 			"cpp",
 			"sh",
+			"go",
 			"tex",
 			"latex",
 			"cmake",
 			"cpp",
+			"html",
+			"css",
+			"js",
 		},
 		init_options = {
 			documentFormatting = true,
@@ -113,6 +122,7 @@ local config = function()
 			languages = {
 				lua = { luacheck, stylua },
 				python = { ruff }, --autopep8
+				-- c = { clangformat, clang_tidy }, -- maybe cpplint will function better
 				c = { clangformat, clang_tidy }, -- maybe cpplint will function better
 				cpp = { clangformat, clang_tidy },
 				sh = { shfmt, shellcheck },

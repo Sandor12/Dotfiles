@@ -63,10 +63,11 @@ static const char *termcmd[] = {"alacritty", "--command", "tmux", NULL};
 static const char *freetube[] = {"freetube", NULL};
 static const char *firefox[] = {"firefox", NULL};
 static const char *discord[] = {"discord", NULL};
-static const char *flameshot[] = {"sh", "-c", "flameshot gui -r | xclip -selection clipboard -t image/png", NULL};
+static const char *flameshot[] = {"flameshot", "gui", NULL};
 static const char *upvol[] = {"pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL};
 static const char *downvol[] = {"pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL};
 static const char *mutevol[] = {"pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL};
+static const char *mutemic[] = {"pactl", "set-source-mute", "@DEFAULT_SOURCE@", "toggle", NULL};
 static const char *downbrightness[] = {"brightness.sh", "-d", "25", NULL};
 static const char *upbrightness[] = {"brightness.sh", "-u", "25", NULL};
 
@@ -78,9 +79,10 @@ static const Key keys[] = {
     {MODKEY | ControlMask,                     XK_y,          spawn,       {.v = freetube}},
     {MODKEY | ControlMask,                     XK_d,          spawn,        {.v = discord}},
     {                   0,                 XK_Print,          spawn,      {.v = flameshot}},
-    {                   0,  XF86XK_AudioLowerVolume,          spawn,        {.v = downvol}},
     {                   0,         XF86XK_AudioMute,          spawn,        {.v = mutevol}},
+    {                   0,  XF86XK_AudioLowerVolume,          spawn,        {.v = downvol}},
     {                   0,  XF86XK_AudioRaiseVolume,          spawn,          {.v = upvol}},
+    {                   0,      XF86XK_AudioMicMute,          spawn,        {.v = mutemic}},
     {                   0, XF86XK_MonBrightnessDown,          spawn, {.v = downbrightness}},
     {                   0,   XF86XK_MonBrightnessUp,          spawn,   {.v = upbrightness}},
     {              MODKEY,                     XK_b,      togglebar,                   {0}},
@@ -127,4 +129,4 @@ static const Button buttons[] = {
     {    ClkTagBar, MODKEY, Button3,      toggletag,                {0}},
 };
 
-static const char *const autostart[] = {"wal", "-i", "/home/sandor/.background.jpg", NULL, "sh", "-c", "exec $HOME/.stat.sh", NULL, NULL};
+static const char *const autostart[] = {"wal", "-i", "/home/sandor/.background.jpg", NULL, "sh", "-c", "exec $HOME/.stat.sh", NULL, "flameshot", NULL, NULL};

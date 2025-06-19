@@ -36,7 +36,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
 -- set concellevel to 2 in neorg
 vim.api.nvim_create_autocmd("BufEnter", {
 	callback = function(ctx)
-		local neorg = vim.fs.root(ctx.buf, { "index.norg" })
+		local neorg = vim.fs.root(ctx.buf, { "index.norg", "refile.org" })
 		if neorg then
 			vim.opt.conceallevel = 3
 		else

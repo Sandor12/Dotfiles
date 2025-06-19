@@ -26,6 +26,7 @@ local config = function()
 			},
 			["core.integrations.nvim-cmp"] = {},
 			["core.export"] = { config = { extensions = "all" } },
+			["core.ui.calendar"] = {},
 			-- ["core.integrations.image"] = {},
 			-- ["core.latex.renderer"] = {},
 		},

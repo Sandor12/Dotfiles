@@ -11,6 +11,8 @@ local config = function()
 		ensure_installed = {
 			"rust",
 			"c",
+			"html",
+            "css",
 			"markdown",
 			"markdown_inline",
 			"json",
@@ -24,6 +26,10 @@ local config = function()
 			"python",
 			"toml",
 			"norg",
+			"go",
+			"gomod",
+			"gowork",
+			"gosum",
 		},
 		auto_install = true,
 		highlight = {
