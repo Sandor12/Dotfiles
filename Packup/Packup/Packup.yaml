@@ -15,5 +15,6 @@ Backup:
   clang-format: ~/.clang-format
   Alacritty: ~/.config/alacritty
   Hyprland: ~/.config/hypr
+  Quickshell: ~/.config/quickshell
   
   
