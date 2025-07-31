@@ -47,11 +47,11 @@ Rectangle {
             Dat.Audio.toggleMute(Dat.Audio.sink);
             break;
           case Qt.LeftButton:
-            if (Dat.Globals.notchState == "FULLY_EXPANDED" && Dat.Globals.swipeIndex == 4 && Dat.Globals.settingsTabIndex == 1) {
+            if (Dat.Globals.notchState == "FULLY_EXPANDED") {
               Dat.Globals.notchState = "EXPANDED";
             } else {
               Dat.Globals.notchState = "FULLY_EXPANDED";
-              Dat.Globals.swipeIndex = 4;
+              Dat.Globals.swipeIndex = 3;
               Dat.Globals.settingsTabIndex = 1;
             }
             break;

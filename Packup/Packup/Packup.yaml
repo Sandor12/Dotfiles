@@ -7,7 +7,7 @@ Backup:
   dwmstatusbar: ~/.stat.sh
   dwmautostart: ~/.dwm-xinitrc
   backgroundimage: ~/.background.jpg
-  packagelist: ~/packagelist
+  colorschemeimage: ~/.colorscheme.jpg
   fish: ~/.config/fish
   tmux: ~/.tmux.conf
   htop: ~/.config/htop
@@ -18,3 +18,7 @@ Backup:
   Quickshell: ~/.config/quickshell
   
   
+Programs:
+  extras: programlist.txt
+  multilib: multiliblist.txt
+  aur: aurlist.txt

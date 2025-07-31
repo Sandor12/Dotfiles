@@ -36,7 +36,7 @@ Rectangle {
         fillMode: Image.PreserveAspectCrop
         height: this.width
         layer.enabled: true
-        opacity: 0.9
+        opacity: 1
         rotation: 0
         source: "../Assets/archlinux.svg"
         width: parent.height
@@ -46,12 +46,12 @@ Rectangle {
           colorization: 1
           colorizationColor: Dat.Colors.secondary
         }
-        Behavior on rotation {
-          NumberAnimation {
-            duration: 500
-            easing.type: Easing.Linear
-          }
-        }
+        // Behavior on rotation {
+        //   NumberAnimation {
+        //     duration: 500
+        //     easing.type: Easing.Linear
+        //   }
+        // }
 
         // Timer {
         //   interval: 500

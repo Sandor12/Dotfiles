@@ -18,6 +18,12 @@ Repeater {
       text: "󰤄",
       action: event => Dat.SessionActions.suspend()
     },
+    {
+      text: "",
+      action: event => Dat.SessionActions.lock()
+    },
+    
+
   ]
 
   delegate: Rectangle {

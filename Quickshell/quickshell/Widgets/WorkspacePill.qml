@@ -64,7 +64,7 @@ Rectangle {
     layerRadius: 20
 
     onClicked: {
-      if (Dat.Globals.notchState == "FULLY_EXPANDED" && Dat.Globals.swipeIndex == 1) {
+      if (Dat.Globals.notchState == "FULLY_EXPANDED") {
         Dat.Globals.notchState = "EXPANDED";
       } else {
         Dat.Globals.notchState = "FULLY_EXPANDED";

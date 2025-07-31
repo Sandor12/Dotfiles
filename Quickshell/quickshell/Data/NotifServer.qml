@@ -9,7 +9,7 @@ import Quickshell.Services.Notifications
 Singleton {
   id: notif
 
-  property bool dndEnabled: false
+  property bool dndEnabled: true
   property int notifCount: notifServer.trackedNotifications.values.length
   property ScriptModel notifications: serverNotifications
   property NotificationServer server: notifServer

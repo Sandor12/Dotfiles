@@ -19,7 +19,7 @@ Scope {
       anchors.top: true
       color: "transparent"
       exclusionMode: ExclusionMode.Ignore
-      focusable: false
+      focusable: false 
       implicitHeight: screen.height * 0.65
       layer: WlrLayer.Top
       namespace: "rexies.notch.quickshell"
@@ -70,11 +70,11 @@ Scope {
             PropertyChanges {
               expandedPane.opacity: 0
               expandedPane.visible: false
-              notchRect.height: notchRect.baseHeight
-              notchRect.opacity: 0
-              notchRect.width: notchRect.baseWidth
-              topBar.opacity: 0
-              topBar.visible: false
+              notchRect.height: notchRect.expandedHeight
+              notchRect.opacity: 1
+              notchRect.width: notchRect.expandedWidth
+              topBar.opacity: 1
+              topBar.visible: true
             }
           },
           State {
@@ -268,7 +268,7 @@ Scope {
             if (notchArea.containsMouse) {
               Dat.Globals.notchState = "EXPANDED";
             } else {
-              Dat.Globals.notchState = "COLLAPSED";
+              Dat.Globals.notchState = "EXPANDED";
             }
           }
 

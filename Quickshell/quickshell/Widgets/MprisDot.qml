@@ -31,7 +31,7 @@ Rectangle {
     layerColor: Dat.Colors.tertiary
 
     onClicked: mevent => {
-      if (Dat.Globals.notchState == "FULLY_EXPANDED" && Dat.Globals.swipeIndex == 2) {
+      if (Dat.Globals.notchState == "FULLY_EXPANDED") {
         Dat.Globals.notchState = "EXPANDED";
       } else {
         Dat.Globals.notchState = "FULLY_EXPANDED";

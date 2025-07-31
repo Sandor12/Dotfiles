@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import Quickshell.Services.Mpris
 import Quickshell
+import QtQuick.Effects
 
 import "../Data/" as Dat
 import "../Widgets/" as Wid
@@ -9,11 +10,15 @@ import "../Widgets/" as Wid
 Rectangle {
   color: "transparent"
 
-  AnimatedImage {
+  Image {
     anchors.fill: parent
     fillMode: Image.PreserveAspectFit
-    playing: Mpris.players.values.length == 0
-    source: Dat.Paths.getPath(this, "https://media.tenor.com/JtofR661NDIAAAAi/honkai-star-rail-hsr.gif")
+    source: "../Assets/archlinux.svg"//Dat.Paths.getPath(this, "https://media.tenor.com/JtofR661NDIAAAAi/honkai-star-rail-hsr.gif")
+    layer.enabled: true
+    layer.effect: MultiEffect {
+      colorization: 1
+      colorizationColor: Dat.Colors.secondary
+    }
   }
 
   Text {

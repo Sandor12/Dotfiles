@@ -19,7 +19,7 @@ Singleton {
   property real notchScale: 1.25
 
   // one of "COLLAPSED", "EXPANDED", "FULLY_EXPANDED"
-  property string notchState: "COLLAPSED"
+  property string notchState: "EXPANDED"
 
   // one of "HIDDEN", "POPUP", "INBOX"
   property string notifState: "HIDDEN"
@@ -54,7 +54,7 @@ Singleton {
     if (root.actWinName == "desktop" && root.notchState == "COLLAPSED") {
       root.notchState = "EXPANDED";
     } else if (root.notchState == "EXPANDED" && !root.notchHovered) {
-      root.notchState = "COLLAPSED";
+      root.notchState = "EXPANDED";
     }
   }
 }

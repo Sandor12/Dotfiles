@@ -80,7 +80,7 @@ Rectangle {
   Timer {
     interval: 600
     repeat: true
-    running: root.batCharging && (Dat.Globals.notchState != "COLLAPSED")
+    running: root.batCharging
 
     onTriggered: () => {
       root.chargeIconIndex = root.chargeIconIndex % 10;
@@ -94,11 +94,11 @@ Rectangle {
     layerColor: Dat.Colors.on_primary
 
     onClicked: {
-      if (Dat.Globals.notchState == "FULLY_EXPANDED" && Dat.Globals.swipeIndex == 4 && Dat.Globals.settingsTabIndex == 0) {
+      if (Dat.Globals.notchState == "FULLY_EXPANDED") {
         Dat.Globals.notchState = "EXPANDED";
       } else {
         Dat.Globals.notchState = "FULLY_EXPANDED";
-        Dat.Globals.swipeIndex = 4;
+        Dat.Globals.swipeIndex = 3;
         Dat.Globals.settingsTabIndex = 0;
       }
     }

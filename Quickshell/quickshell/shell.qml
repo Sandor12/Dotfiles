@@ -18,6 +18,10 @@ ShellRoot {
     }
   }
 
+
+  Test {
+  }
+
   Panes.Notch {
   }
 

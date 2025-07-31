@@ -3,6 +3,7 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Effects
 import Quickshell
+import Quickshell.Hyprland
 
 import "../Widgets/" as Wid
 import "../Data/" as Dat
@@ -24,7 +25,7 @@ RowLayout {
       anchors.centerIn: parent
       height: this.width
       mipmap: true
-      source: Quickshell.env("HOME") + "/.background.jpg"
+      source: "../Assets/profile.jpg"
       visible: false
       width: 90
     }
@@ -70,7 +71,7 @@ RowLayout {
       anchors.centerIn: parent
       color: Dat.Colors.on_surface
       font.pointSize: 14
-      text: "Hello" 
+      text: "Hello" //+ Hyprland.workspaces
     }
 
       Wid.NotifDots {

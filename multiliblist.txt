@@ -1,0 +1,4 @@
+steam
+wine-mono
+lib32-gtk2
+winetricks

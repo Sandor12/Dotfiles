@@ -32,6 +32,10 @@ Singleton {
     root.idleInhibited = !root.idleInhibited;
   }
 
+  function lock() {
+      lock.running = true;
+  }
+
   Process {
     id: suspend
 
@@ -48,6 +52,12 @@ Singleton {
     id: poweroff
 
     command: ["poweroff"]
+  }
+
+  Process {
+      id: lock
+
+      command: ["hyprlock"]
   }
 
   Process {

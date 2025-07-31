@@ -1,4 +1,5 @@
-wal -i ~/.background.jpg &>/dev/null
+
+wal -n -i ~/.colorscheme.jpg &>/dev/null
 set fish_greeting
 
 set PATH $HOME/App/flutter/bin $PATH $HOME/Scripts $HOME/.local/bin $HOME/.cargo/bin $HOME/.local/share/gem/ruby/3.3.0/bin 
