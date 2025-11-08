@@ -19,9 +19,6 @@ ShellRoot {
   }
 
 
-  Test {
-  }
-
   Panes.Notch {
   }
 

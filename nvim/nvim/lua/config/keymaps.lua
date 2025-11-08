@@ -47,7 +47,7 @@ keymap.set("n", "<leader>g", ":Neogit<CR>")
 -- Oil
 keymap.set("n", "<leader>fd", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 keymap.set("n", "<leader>fp", "<CMD>Oil ~/Projects<CR>", { desc = "Open Projects directory" })
-keymap.set("n", "<leader>fc", "<CMD>Oil ~/.config/nvim/<CR>", { desc = "Open Projects directory" })
+keymap.set("n", "<leader>fc", "<CMD>Oil ~/.config/nvim/<CR>", { desc = "Open nvim config directory" })
 
 -- Move to neorg index
 keymap.set("n", "<leader>ni", "<CMD>edit ~/Bureau/orgfiles/refile.org<CR>")

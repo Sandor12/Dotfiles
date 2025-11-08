@@ -40,6 +40,7 @@ return {
 				-- "rust-analyzer", to reset if needed
 				"html-lsp",
 				"css-lsp",
+				"ansible-lint",
 			},
 			auto_update = true,
 		})

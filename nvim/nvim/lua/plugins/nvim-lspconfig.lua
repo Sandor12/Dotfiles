@@ -85,6 +85,8 @@ local config = function()
 
 	lspconfig.biome.setup({})
 
+	lspconfig.ansiblels.setup({})
+
 	local luacheck = require("efmls-configs.linters.luacheck")
 	local stylua = require("efmls-configs.formatters.stylua")
 	local ruff = require("efmls-configs.linters.ruff")
